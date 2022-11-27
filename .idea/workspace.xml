@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62b762cb-57b0-4635-90c5-df094abe2eb1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/blue_sky_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alien.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalpart2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_stats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Ship.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/rain.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/water1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newgame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythongame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sideways_shooter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/watergame.py" beforeDir="false" afterPath="$PROJECT_DIR$/watergame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watergamerain.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HEPiQ4Ehm2pAXBXkrA2p5fG3QE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/m253204/Favorites/EW200/alien_invasion"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m253204\Favorites\EW200\final_project\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62b762cb-57b0-4635-90c5-df094abe2eb1" name="Changes" comment="" />
+      <created>1667847396109</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667847396109</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
