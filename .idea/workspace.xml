@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b762cb-57b0-4635-90c5-df094abe2eb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blue_sky_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalpart2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_stats.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Ship.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/rain.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/water1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newgame.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythongame.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sideways_shooter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/watergame.py" beforeDir="false" afterPath="$PROJECT_DIR$/watergame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watergamerain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/watergame.py" beforeDir="false" afterPath="$PROJECT_DIR$/Delve.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +39,34 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m253204\Favorites\EW200\final_project\images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Delve" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="final_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\m253204\Favorites\EW200\final_project\Delve.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Delve" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
