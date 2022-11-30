@@ -3,6 +3,10 @@ class Settings:
 
     def __init__(self):
         # Screen Settings
-        self.screen_width = 1200
-        self.screen_height = 600
-        self.bg_color = (0, 0, 80)
+        self.screen_width = 1080
+        self.screen_height = 1920
+        self.bg_color = (32, 230, 200)
+
+        # Diver Settings
+        self.ship_speed = 1.5
+        self.ship_limit = 3

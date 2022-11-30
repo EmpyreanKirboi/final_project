@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b762cb-57b0-4635-90c5-df094abe2eb1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/diver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watergame.py" beforeDir="false" afterPath="$PROJECT_DIR$/Delve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delve.py" beforeDir="false" afterPath="$PROJECT_DIR$/Delve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delvesettings.py" beforeDir="false" afterPath="$PROJECT_DIR$/delvesettings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/startscreen.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/images/startscreen.bmp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
