@@ -3,6 +3,7 @@ import pygame
 import time
 from delvesettings import Settings
 from diver import Diver
+from diver import depth
 
 i = 0
 
@@ -26,10 +27,12 @@ class Delve:
 
     def run_game(self):
         """Start the main loop for the game."""
+        global i
         while True:
             self._check_events()
             self._update_screen()
-            self.diver.update()
+
+
 
     def _check_events(self):
         """Respond to key presses and mouse events."""
@@ -42,15 +45,15 @@ class Delve:
                 self._check_keyup_events(event)
 
     def _check_keydown_events(self, event):
+        global i
         """Respond to key presses."""
         if event.key == pygame.K_RIGHT:
             self.diver.moving_right = True
         elif event.key == pygame.K_LEFT:
             self.diver.moving_left = True
         elif event.key == pygame.K_SPACE:
-            self.screen.fill(self.settings.bg_color)
-            self.diver.blitme()
-            pygame.display.flip()
+            i += 1
+            self.diver.moving_up = True
         elif event.key == pygame.K_q:
             sys.exit()
     def _check_keyup_events(self, event):
@@ -59,21 +62,31 @@ class Delve:
             self.diver.moving_right = False
         elif event.key == pygame.K_LEFT:
             self.diver.moving_left = False
+        elif event.key == pygame.K_SPACE:
+            self.diver.moving_up = False
+
 
             # Redraw the screen during each pass through the loop.
 
 
     def _update_screen(self):
+        global depth
         """Update images on the screen, and flip to the new screen."""
         global i
         if i == 0:
-            self.screen.fill(self.settings.bg_color)
             startscreen = Delve()
             startscreen.draw()
-            i += 1
-        elif i > 0:
             pygame.display.flip()
-
+            #print(i)
+        if i > 0:
+            self.settings.update()
+            self.screen.fill(self.settings.bg_color)
+            self.diver.gravity()
+            self.image = pygame.image.load("images/diver_healthy.bmp")
+            self.diver.update()
+            self.diver.blitme()
+            pygame.display.flip()
+            #print(i)
 
         # Make the most recently drawn screen visible.
 
