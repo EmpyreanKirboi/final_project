@@ -15,7 +15,7 @@ class Diver:
         self.settings = ai_game.settings
         self.screen_rect = ai_game.screen.get_rect()
         a = ai_game.screen.get_rect()
-         #print(a)
+        #print(a)
 
         # Load the diver image and get its rect.
 
@@ -36,12 +36,10 @@ class Diver:
         # Movement Flag
         self.moving_right = False
         self.moving_left = False
-        self.moving_down = False
 
         # Update rect object from self.x.
     def update(self):
         global a
-        global depth
         """Update the ship's position based on the movement flag."""
         # update the ships x value, not the rect.
         self.rect.y = self.rect.y + self.movey
@@ -63,8 +61,6 @@ class Diver:
             self.movey -= 5.00
         if self.rect.bottom > self.screen_rect.bottom + 480:
             self.rect.y = -300
-            depth -= 10
-            print(depth)
 
         # Update rect object from self.x.
         self.rect.x = self.x

@@ -6,14 +6,8 @@ class Settings:
         # Screen Settings
         self.screen_width = 1920
         self.screen_height = 1080
-        self.bg_color = (32, 230, int(depth))
+        self.bg_color = (32, 230, 200)
         #print(self.bg_color)
 
         # Diver Settings
         self.diver_speed = 5.0
-        self.ship_limit = 3
-
-    def update(self):
-        self.bg_color = (32, 230, int(depth))
-        
-        print(self.bg_color)

@@ -79,7 +79,6 @@ class Delve:
             pygame.display.flip()
             #print(i)
         if i > 0:
-            self.settings.update()
             self.screen.fill(self.settings.bg_color)
             self.diver.gravity()
             self.image = pygame.image.load("images/diver_healthy.bmp")
