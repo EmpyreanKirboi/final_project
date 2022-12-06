@@ -2,7 +2,7 @@ import pygame
 import time
 
 a = 0
-depth = 200
+depth = 0
 class Diver:
     """A class to manage the ship."""
 
@@ -19,8 +19,8 @@ class Diver:
 
         # Load the diver image and get its rect.
 
-        self.image = pygame.image.load("images/diver_healthy_swim.bmp")
-
+        from timing import skin
+        self.image = skin
         self.rect = self.image.get_rect()
 
 
@@ -39,34 +39,30 @@ class Diver:
 
         # Update rect object from self.x.
     def update(self):
-        global a
+        global depth
         """Update the ship's position based on the movement flag."""
         # update the ships x value, not the rect.
         self.rect.y = self.rect.y + self.movey
 
-        if a == 1:
-            self.image = pygame.image.load("images/diver_healthy_swim.bmp")
-            #print("swim")
-            a -= 1
-        if a == 0:
-            self.image = pygame.image.load("images/diver_healthy.bmp")
-            #print("notswim")
-            a += 1
         if self.moving_right and self.rect.right < self.screen_rect.right + 470:
             self.x += self.settings.diver_speed
         if self.moving_left and self.rect.left > -500:
             self.x -= self.settings.diver_speed
         if self.moving_up:
             self.movey = 0
-            self.movey -= 5.00
+            self.movey -= 1.50
         if self.rect.bottom > self.screen_rect.bottom + 480:
+            depth += 1
+            #print(depth)
             self.rect.y = -300
 
         # Update rect object from self.x.
         self.rect.x = self.x
 
     def gravity(self):
-        self.movey += 0.08
+        self.movey += 0.04
+
+
 
     def blitme(self):
         """Draw the ship at its current location."""

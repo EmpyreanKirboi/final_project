@@ -10,4 +10,7 @@ class Settings:
         #print(self.bg_color)
 
         # Diver Settings
-        self.diver_speed = 5.0
+        self.diver_speed = 1.0
+
+        # Enemy Settings
+        self.enemy_speed = 0.5

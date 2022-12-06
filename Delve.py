@@ -3,11 +3,18 @@ import pygame
 import time
 from delvesettings import Settings
 from diver import Diver
-from diver import depth
 
 i = 0
 
+pygame.mixer.init()
+
 pygame.init()
+
+song_1 = pygame.mixer.Sound('music/goodtheme.wav')
+song_1.set_volume(0.1)
+song_2 = pygame.mixer.Sound('music/diversounds.wav')
+song_2.set_volume(1)
+song_3 = pygame.mixer.Sound('music/surface.wav')
 
 
 class Delve:
@@ -56,6 +63,8 @@ class Delve:
             self.diver.moving_up = True
         elif event.key == pygame.K_q:
             sys.exit()
+
+
     def _check_keyup_events(self, event):
         """Respond to key releases."""
         if event.key == pygame.K_RIGHT:
@@ -77,14 +86,26 @@ class Delve:
             startscreen = Delve()
             startscreen.draw()
             pygame.display.flip()
+            song_3.play(0)
             #print(i)
         if i > 0:
-            self.screen.fill(self.settings.bg_color)
+            from diver import depth
+            from timing import skin
+            print(skin)
+            song_3.stop()
+            song_1.play(-1)
+            song_2.play(-1)
+            color = (32, 230, 200)
+            newcolor = (color[0] - depth*1.3, color[1] - depth*23, color[2] - depth*20)
+            #print(depth)
+            #print(newcolor)
+            self.screen.fill(newcolor)
             self.diver.gravity()
-            self.image = pygame.image.load("images/diver_healthy.bmp")
+            self.image = skin
             self.diver.update()
             self.diver.blitme()
             pygame.display.flip()
+            #print(depth)
             #print(i)
 
         # Make the most recently drawn screen visible.
