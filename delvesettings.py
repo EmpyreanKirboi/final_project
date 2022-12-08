@@ -14,3 +14,5 @@ class Settings:
 
         # Enemy Settings
         self.enemy_speed = 0.5
+
+        self.diver_limit = 1

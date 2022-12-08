@@ -3,6 +3,9 @@ import pygame
 import time
 from delvesettings import Settings
 from diver import Diver
+from enemy import Enemy
+
+pastdepths = 0
 
 i = 0
 
@@ -30,6 +33,7 @@ class Delve:
         self.settings.screen_height = self.screen.get_rect().height
         pygame.display.set_caption("Delve")
 
+        self.enemy = Enemy(self)
         self.diver = Diver(self)
 
     def run_game(self):
@@ -37,7 +41,15 @@ class Delve:
         global i
         while True:
             self._check_events()
-            self._update_screen()
+            self.refresh()
+            self._update_screen(pastdepths)
+
+
+    def refresh(self):
+        if pygame.Rect.colliderect(self.enemy.rect, self.diver.rect):
+
+
+
 
 
 
@@ -78,7 +90,7 @@ class Delve:
             # Redraw the screen during each pass through the loop.
 
 
-    def _update_screen(self):
+    def _update_screen(self, pastdepths):
         global depth
         """Update images on the screen, and flip to the new screen."""
         global i
@@ -91,7 +103,7 @@ class Delve:
         if i > 0:
             from diver import depth
             from timing import skin
-            print(skin)
+            #print(skin)
             song_3.stop()
             song_1.play(-1)
             song_2.play(-1)
@@ -102,12 +114,14 @@ class Delve:
             self.screen.fill(newcolor)
             self.diver.gravity()
             self.image = skin
+            self.enemy.update()
             self.diver.update()
+            self.enemy.blitme()
             self.diver.blitme()
-            pygame.display.flip()
-            #print(depth)
-            #print(i)
 
+            pygame.display.flip()
+            print(depth)
+            #print(i)
         # Make the most recently drawn screen visible.
 
     def draw(self):

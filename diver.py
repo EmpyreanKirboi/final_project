@@ -1,8 +1,11 @@
 import pygame
 import time
+import random
 
 a = 0
 depth = 0
+pos_y = 0
+pos_x = 0
 class Diver:
     """A class to manage the ship."""
 
@@ -37,9 +40,14 @@ class Diver:
         self.moving_right = False
         self.moving_left = False
 
+
+
+
         # Update rect object from self.x.
     def update(self):
         global depth
+        global pos_y
+        global pos_x
         """Update the ship's position based on the movement flag."""
         # update the ships x value, not the rect.
         self.rect.y = self.rect.y + self.movey
@@ -53,6 +61,8 @@ class Diver:
             self.movey -= 1.50
         if self.rect.bottom > self.screen_rect.bottom + 480:
             depth += 1
+            pos_y = random.randint(50, 700)
+            pos_x = random.randint(50, 700)
             #print(depth)
             self.rect.y = -300
 
